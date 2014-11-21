@@ -59,4 +59,4 @@ searchFreePort() {
 searchFreePort
 
 
-${KERNEL_ROOT_DIR}/bin/salome/envSalome.py python -i $HEXA_ROOT_DIR/bin/salome/myrunSalome.py --modules=HEXA --killall
+${KERNEL_ROOT_DIR}/bin/salome/envSalome.py python -i $HEXA_ROOT_DIR/bin/salome/runSalomeHexablock.py --modules=HEXA --killall

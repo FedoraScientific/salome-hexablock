@@ -17,15 +17,15 @@
 # See http://www.salome-platform.org/ or email : webmaster.salome@opencascade.com
 #
 
-SALOME_CONFIGURE_FILE(VERSION.in VERSION INSTALL ${SALOME_INSTALL_BINS})
-SALOME_CONFIGURE_FILE(runAppli.in runAppli INSTALL ${SALOME_INSTALL_BINS})
+SALOME_CONFIGURE_FILE(VERSION.in VERSION.hexablock INSTALL ${SALOME_INSTALL_BINS})
+SALOME_CONFIGURE_FILE(runAppli.in runAppliHexablock INSTALL ${SALOME_INSTALL_BINS})
 
 # ===============================================================
 # Files to be installed
 # ===============================================================
 
 SET(_bin_scripts
-  myrunSalome.py
+  runSalomeHexablock.py
 )
 
 SALOME_INSTALL_SCRIPTS("${_bin_scripts}" ${SALOME_INSTALL_SCRIPT_SCRIPTS})
