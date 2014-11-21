@@ -867,7 +867,7 @@ SWIG_Python_AddErrorMsg(const char* mesg)
     Py_DECREF(old_str);
     Py_DECREF(value);
   } else {
-    PyErr_Format(PyExc_RuntimeError, mesg);
+    PyErr_Format(PyExc_RuntimeError, "%s", mesg);
   }
 }
 
@@ -2428,7 +2428,7 @@ SWIG_Python_TypeError(const char *type, PyObject *obj)
     }   
     PyErr_Format(PyExc_TypeError, "a '%s' is expected", type);
   } else {
-    PyErr_Format(PyExc_TypeError, "unexpected type is received");
+    PyErr_Format(PyExc_TypeError, "%s", "unexpected type is received");
   }
 }
 

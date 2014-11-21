@@ -93,7 +93,7 @@ inline void XmlWriter::addAttribute (cpchar attrib, string& valeur)
 inline void XmlWriter::addMot (cpchar mot)
 {
    if (on_file) 
-      fprintf (xml_file, mot);
+      fprintf (xml_file, "%s", mot);
    else 
       xml_buffer += mot;
 }
